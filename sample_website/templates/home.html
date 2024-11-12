@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+</head>
+
+<body>
+    <h1><a href="/">Home</a></h1>
+    <h1><a href="/first_app/about/">About</a></h1>
+    <h1><a href="/first_app/contact/">Contact</a></h1>
+    <h1>This is Home page</h1>
+
+    <!-- Template functions -->
+    <div style="text-align: center">
+        <h1>JOIN: {{ info | join:" " }}</h1>
+        <h1>DATE: {{ timeNow | date:"SHORT_DATE_FORMAT" }}</h1>
+        <h1>DATE (default): {{ timeNow | date }}</h1>
+        <h1>ADD: {{ 10 | add:"5" }}</h1>
+        <h1>CAPFIRST: {{ name | capfirst }}</h1>
+        <h1>CUT: {{ city | cut:" " }}</h1>
+        <h1>DICTSORT: {{ peoples | dictsort:"age" }}</h1>
+        <h1>FIRST: {{ info | first }}</h1>
+        <h1>LAST: {{ info | last }}</h1>
+        <h1>LENGTH: {{ info | length }}</h1>
+        <h1>LINENUMBERS: {{ info | linenumbers }}</h1>
+        <h1>LOWER: {{ city | lower }}</h1>
+        <h1>UPPER: {{ name | upper }}</h1>
+        <h1>TITLE: {{ pet | title }}</h1>
+        <h1>RANDOM: {{ info | random }}</h1>
+        <h1>TIME: {{ timeNow | time:"H:i" }}</h1>
+        <h1>TRUNCATECHARS: {{ py | truncatechars:7 }}</h1>
+        <h1>WORDCOUNT: {{ py | wordcount }}</h1>
+        <h1>TRUNCATEWORDS: {{ py | truncatewords:3 }}</h1>
+        <h1>MAKE_LIST: {{ name | make_list }}</h1>
+    </div>
+</body>
+
+</html>
